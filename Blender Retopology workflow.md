@@ -1,58 +1,57 @@
-# Blender Retopology [workflow](https://www.youtube.com/watch?v=X2GNyEUvpD4)
+# Blender Retopology Workflow [source](https://www.youtube.com/watch?v=X2GNyEUvpD4)
 ## Initial Setup
 ### For a cleaner viewport, turn off several UI components:
-![image](/Notes/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
 
-![](/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
-
-![](https://rgbxyz.github.io/Notes/Blender%20Retopology%20Workflow/Retopo_Blender_Interface_Setup01.png)
-
-[README](README.md)
+![](/Blender%20Retopology%20Workflow/Retopo_Blender_Interface_Setup01.png)
 
 ### F4 > preferences > Add-ons
-Turn on Mesh: Bsurfaces GPL Edition
-/Blender Retopology Workflow/Blender Retopo Add-on Bsurfaces.jpg
+#### Turn on Mesh: Bsurfaces GPL Edition
 
-Enable Mesh: F2
-/Blender Retopology Workflow/Blender Retopo Add-on F2.jpg
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20Bsurfaces.jpg)
 
-![](/Blender Retopology Workflow/Blender Retopo Add-on F2.jpg)
+#### Enable Mesh: F2
 
-Enable Mesh: LoopTools
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20F2.jpg)
 
-/Blender Retopology Workflow/Blender Retopo Add-on LoopTools.jpg
+#### Enable Mesh: LoopTools
 
-With Retopo target object (High-Res) selected, Press N to open sidebar Edit > Bsurfaces > Initialize (Add BSurface mesh)
-/Blender Retopology Workflow/Blender Retopo Add-on Bsurfaces Initialize.jpg
-This will Automatically:
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20LoopTools.jpg)
+
+#### With Retopo target object (High-Res) selected, Press N to open sidebar Edit > Bsurfaces > Initialize (Add BSurface mesh)
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20Bsurfaces%20Initialize.jpg)
+
+#### This will Automatically:
 * create an empty object (BSurfaceMesh)
 * Add ShrinkWrap modifier
 * Annotate enabled
 * Snap to surface - Faces
 
-Now you can start drawing strokes for new topology
-/Blender Retopology Workflow/Blender Retopo Annotate Add Surface.jpg
+#### Now you can start drawing strokes for new topology
 
-Change surface options in the Operator Panel
-/Blender Retopology Workflow/Blender Retopo Annotate Add Surface Options.jpg
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface.jpg)
 
-For easier visibility enable In Front (always draws above target mesh)
-/Blender Retopology Workflow/Blender Retopo Annotate Add Surface In Front.jpg
+#### Change surface options in the Operator Panel
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface%20Options.jpg)
 
-Enable Add Mirror and other modifiers (for symmetrical models) Adds:
+#### For easier visibility enable In Front (always draws above target mesh)
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface%20In%20Front.jpg)
+
+#### Enable Add Mirror and other modifiers (for symmetrical models) Adds:
 * Mirror modifier < *Keep*
 * ~~Subdivision Surface modifier~~ < *Remove*
 * ~~Solidify Modifier~~ < *Remove*
-/Blender Retopology Workflow/Blender Retopo Annotate Add Mirror and other modifiers.jpg
 
-Edit mode functionality now works and sticks to the surface.
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Mirror%20and%20other%20modifiers.jpg)
+
+#### Edit mode functionality now works and sticks to the surface.
 If far side of the mirrored geometry gets too noisy:
 * Shading > Options > Backface Culling
-/Blender Retopology Workflow/Blender Retopo Backface Culling.jpg
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Backface%20Culling.jpg)
 * Disable Mirror Modifier display in the modifier panel
 
 To make the Shrinkwrap modifier work better change the Method to Project and enable Negative
-/Blender Retopology Workflow/Blender Retopo Shrinkwrap Method.jpg
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Shrinkwrap%20Method.jpg)
 
 ## BSurface Retopo options
 ### Methods to add geometry:
@@ -78,12 +77,14 @@ To make the Shrinkwrap modifier work better change the Method to Project and ena
 
 ## F2 addon
 Select vertice in corner of what you want to be a new row and press F to pull it out into a new face. Can repeat action by clicking next corner vertice and pressing F again.
-/Blender Retopology Workflow/Blender Retopo F2 add new face.jpg
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20F2%20add%20new%20face.jpg)
 
 ## LoopTools
 N Panel > Edit > LoopTools
 With a circular edge loop selected use Circle to reshape it to a perfect circle
-/Blender Retopology Workflow/Blender Retopo LoopTools Circle.jpg
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20LoopTools%20Circle.jpg)
 
 **Relax:** just as it says, smooths out selected points
 
@@ -99,17 +100,22 @@ With a circular edge loop selected use Circle to reshape it to a perfect circle
 * If you do things like insert loop the shrinkwrap modifier will apply the new points to the surface but only while the modifier is active. This and the Snap to Faces can fight sometimes which is why applying the modifier is helpful.
 
 * AutoMerge is enabled by default which is useful most of the time by welding points that are close together. If it becomes a nuisance you can change the threshold or turn it off. 
-/Blender Retopology Workflow/Blender Retopo Shrinkwrap AutoMerge.jpg
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Shrinkwrap%20AutoMerge.jpg)
 
 * If creating new faces on the backside somewhere and normals are flipped
 	* Hover over a single vertice and press L to select island
 	* Ctrl + Shift + N to flip normals
 ## Workflow
 Start by defining important features with patches of loops - keeping the resolution low.
-/Blender Retopology Workflow/Blender Retopo Workflow 01.jpg
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Workflow%2001.jpg)
 
 After done with first pass of retopology you can clean up with Sculpt Mode > Slide Relax tool (turn strength down)
-/Blender Retopology Workflow/Blender Retopo Sculpt Relax.jpg
+
+![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Sculpt%20Relax.jpg)
+
+[README](README.md)
 
 
 
