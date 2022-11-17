@@ -7,7 +7,7 @@
 
 ![](https://rgbxyz.github.io/Notes/Blender%20Retopology%20Workflow/Retopo_Blender_Interface_Setup01.png)
 
-[test](Readme.md)
+[README](README.md)
 
 ### F4 > preferences > Add-ons
 Turn on Mesh: Bsurfaces GPL Edition
