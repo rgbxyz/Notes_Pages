@@ -1,13 +1,13 @@
 # Blender Retopology [workflow](https://www.youtube.com/watch?v=X2GNyEUvpD4)
 ## Initial Setup
 ### For a cleaner viewport, turn off several UI components:
-(Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
+![image](/Notes/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
 
-![Image-1](Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
+![](/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
 
+![](https://rgbxyz.github.io/Notes/Blender%20Retopology%20Workflow/Retopo_Blender_Interface_Setup01.png)
 
-
-[Image](Notes/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
+[test](Readme.md)
 
 ### F4 > preferences > Add-ons
 Turn on Mesh: Bsurfaces GPL Edition
@@ -15,6 +15,8 @@ Turn on Mesh: Bsurfaces GPL Edition
 
 Enable Mesh: F2
 /Blender Retopology Workflow/Blender Retopo Add-on F2.jpg
+
+![](/Blender Retopology Workflow/Blender Retopo Add-on F2.jpg)
 
 Enable Mesh: LoopTools
 
