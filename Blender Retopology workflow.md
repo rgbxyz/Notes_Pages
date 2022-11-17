@@ -1,4 +1,4 @@
-# Blender Retopology Workflow [source](https://www.youtube.com/watch?v=X2GNyEUvpD4)
+# Blender Retopology Workflow - [source video](https://www.youtube.com/watch?v=X2GNyEUvpD4)
 ## Initial Setup
 ### For a cleaner viewport, turn off several UI components:
 
