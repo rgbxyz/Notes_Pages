@@ -3,7 +3,11 @@
 ### For a cleaner viewport, turn off several UI components:
 (Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
 
-[image](Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
+![Image-1](Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
+
+
+
+[Image](Notes/Blender Retopology Workflow/Retopo_Blender_Interface_Setup01.png)
 
 ### F4 > preferences > Add-ons
 Turn on Mesh: Bsurfaces GPL Edition
