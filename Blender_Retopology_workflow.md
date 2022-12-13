@@ -2,24 +2,24 @@
 ## Initial Setup
 ### For a cleaner viewport, turn off several UI components:
 
-![](/Blender%20Retopology%20Workflow/Retopo_Blender_Interface_Setup01.png)
+![](/BlenderRetopologyWorkflow/Retopo_Blender_Interface_Setup01.png)
 
 ### F4 > preferences > Add-ons
 #### Turn on Mesh: Bsurfaces GPL Edition
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20Bsurfaces.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAdd-onBsurfaces.jpg)
 
 #### Enable Mesh: F2
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20F2.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAdd-onF2.jpg)
 
 #### Enable Mesh: LoopTools
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20LoopTools.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAdd-onLoopTools.jpg)
 
 #### With Retopo target object (High-Res) selected, Press N to open sidebar Edit > Bsurfaces > Initialize (Add BSurface mesh)
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Add-on%20Bsurfaces%20Initialize.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAdd-onBsurfacesInitialize.jpg)
 
 #### This will Automatically:
 * create an empty object (BSurfaceMesh)
@@ -29,29 +29,29 @@
 
 #### Now you can start drawing strokes for new topology
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAnnotateAddSurface.jpg)
 
 #### Change surface options in the Operator Panel
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface%20Options.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAnnotateAddSurfaceOptions.jpg)
 
 #### For easier visibility enable In Front (always draws above target mesh)
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Surface%20In%20Front.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAnnotateAddSurfaceInFront.jpg)
 
 #### Enable Add Mirror and other modifiers (for symmetrical models) Adds:
 * Mirror modifier < *Keep*
 * ~~Subdivision Surface modifier~~ < *Remove*
 * ~~Solidify Modifier~~ < *Remove*
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Annotate%20Add%20Mirror%20and%20other%20modifiers.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoAnnotateAddMirrorandothermodifiers.jpg)
 
 #### Edit mode functionality now works and sticks to the surface.
 If far side of the mirrored geometry gets too noisy:
 * Shading > Options > Backface Culling
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Backface%20Culling.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoBackfaceCulling.jpg)
 * Disable Mirror Modifier display in the modifier panel
 
 To make the Shrinkwrap modifier work better change the Method to Project and enable Negative
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Shrinkwrap%20Method.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoShrinkwrapMethod.jpg)
 
 ## BSurface Retopo options
 ### Methods to add geometry:
@@ -78,13 +78,13 @@ To make the Shrinkwrap modifier work better change the Method to Project and ena
 ## F2 addon
 Select vertice in corner of what you want to be a new row and press F to pull it out into a new face. Can repeat action by clicking next corner vertice and pressing F again.
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20F2%20add%20new%20face.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoF2addnewface.jpg)
 
 ## LoopTools
 N Panel > Edit > LoopTools
 With a circular edge loop selected use Circle to reshape it to a perfect circle
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20LoopTools%20Circle.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoLoopToolsCircle.jpg)
 
 **Relax:** just as it says, smooths out selected points
 
@@ -101,7 +101,7 @@ With a circular edge loop selected use Circle to reshape it to a perfect circle
 
 * AutoMerge is enabled by default which is useful most of the time by welding points that are close together. If it becomes a nuisance you can change the threshold or turn it off. 
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Shrinkwrap%20AutoMerge.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoShrinkwrapAutoMerge.jpg)
 
 * If creating new faces on the backside somewhere and normals are flipped
 	* Hover over a single vertice and press L to select island
@@ -109,11 +109,11 @@ With a circular edge loop selected use Circle to reshape it to a perfect circle
 ## Workflow
 Start by defining important features with patches of loops - keeping the resolution low.
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Workflow%2001.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoWorkflow01.jpg)
 
 After done with first pass of retopology you can clean up with Sculpt Mode > Slide Relax tool (turn strength down)
 
-![](/Blender%20Retopology%20Workflow/Blender%20Retopo%20Sculpt%20Relax.jpg)
+![](/BlenderRetopologyWorkflow/BlenderRetopoSculptRelax.jpg)
 
 [README](README.md)
 
