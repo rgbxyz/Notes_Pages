@@ -1,0 +1,92 @@
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <base target="_parent">
+  </head>
+  
+  <body class="ck-content">
+     <h1>Cell Fracture</h1>
+
+    
+<h2>Process to cell fracture object - <a href="https://www.youtube.com/watch?v=keKDABQfxQU">video</a></h2>
+    <ol>
+      <li>assign 2 materials (outside and inside)</li>
+      <li>enable Cell Fracture add-on</li>
+      <li>Use settings similar to this
+        <ol>
+          <li>The Material setting to 1 = enables outside and inside materials</li>
+          <li>Set Noise to 1</li>
+          <li>Source Limit 200 (amount of fractures that will happen)</li>
+          <li>
+            <img class="image_resized" style="width:50%;" src="Cell%20Fracture/2_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>Initial Result
+        <ol>
+          <li>
+            <img class="image_resized" style="width:50%;" src="Cell%20Fracture/1_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>Move fractured pieces into new collection called “Cells”</li>
+      <li>Create Plane and move it to Default Collection
+        <ol>
+          <li>
+            <img class="image_resized" style="width:50%;" src="Cell%20Fracture/3_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>With Plane selected add Geometry Nodes to it.</li>
+      <li>Create Collection Info node and choose Cells collection
+        <ol>
+          <li>set to Relative and Separate Children</li>
+          <li>
+            <img class="image_resized" style="width:50%;" src="Cell%20Fracture/5_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>Hide Cells collection so now only Geometry Nodes instance is visible</li>
+      <li>Add Scale Instances, Rotate Instances and Translate Instances nodes for
+        versatility
+        <ol>
+          <li>
+            <img src="Cell%20Fracture/6_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>Add Empty to the scene and move it to the side (this will control Scale,
+        Rotate, Translate instances)</li>
+      <li>Drag Empty from outliner into Geometry Nodes graph
+        <ol>
+          <li>Change <code>Empty</code> Object Info node to Relative</li>
+          <li>
+            <img src="Cell%20Fracture/7_image.png">
+          </li>
+        </ol>
+      </li>
+      <li>Create Position node (to track position of Empty), Math Node set to Distance
+        and Map Range node (to keep things constrained)
+        <ol>
+          <li>
+            <img src="Cell%20Fracture/9_image.png">
+          </li>
+          <li>Adjust Map Range settings to get a disintegrate effect as Empty moves
+            through
+            <ol>
+              <li>
+                <img src="Cell%20Fracture/10_image.png">
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+      <li>Paused video to get back to work on a meeting filled day 2023.01.04 -
+        4:48/7:37 minutes</li>
+    </ol>
+  </body>
+
+</html>
